@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../assets/logo.png">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="userNav">
+            <div>
+                <a href="./clubLogin.html">
+                    <img src="../assets/iconos/UserIcon.png" alt="icono de usuario" class="userIcon" />
+                </a>
+                <a href="../index.html">
+                    <img src="../assets/iconos/logo.png" alt="Logo de Byblo's" class="logoMobile" />
+                </a>
+            </div>
+
+            <form action="#" method="get">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit">buscar</button>
+            </form>
+        </div>
+
+        <a href="../index.html">
+            <img src="../assets/iconos/logo.png" alt="Logo de Byblo's" class="logo" />
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./formularioContacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./promociones.html">Promos</a>
+                </li>
+                <li>
+                    <a href="./clubLogin.html">El club</a>
+                </li>
+                <li>
+                    <a href="./catalogo.html">Tienda</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="main">
+            <div class="formContainer">
+                <h1>Inicia Sesion</h1>
+                <form action="/action_page.php" method="get">
+                    <div class="formItem" id="itemLogin">
+                        <label for="userName">Nombre de usuario:</label>
+                        <input type="text" name="userName">
+                    </div>
+
+                    <div class="formItem" id="itemLogin">
+                        <label for="password">password:</label>
+                        <input type="password" name="password" name="password">
+                    </div>
+
+                    <div class="formItem">
+                        <input type="button" value="Olvide mi contrasena">
+                        <input type="submit" value="Login">
+                    </div>
+
+                </form>
+                <p>No sos miembro? hace click <a href="./clubSuscripcion.html">aqui</a></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li class="redes">
+                <a href="https://www.instagram.com/libreriabyblos/?hl=es" target="_blank">
+                    <img src="../assets/iconos/instagram.png" alt="instragram icon">
+                </a>
+            </li>
+            <li class="redes">
+                <a href="https://es-la.facebook.com/bybloslibreriaface/" target="_blank">
+                    <img src="../assets/iconos/facebook.png" alt="facebook icon" id="facebookIcon">
+                </a>
+            </li>
+            <li class="redes">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="../assets/iconos/youtube.png" alt="youtube icon">
+                </a>
+            </li>
+            <li class="redes">
+                <a href="https://twitter.com/libreriabyblos?lang=es" target="_blank">
+                    <img src="../assets/iconos/tweeter.png" alt="tweeter icon">
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -59,39 +59,37 @@
             <div class="formAndLocation">
                 <div class="formContainer">
                     <h5>Para contactarte con nosotros, dejá acá tus datos y te responderemos a tu mail.</h5>
-                    <form action="/action_page.php" method="get">
+                    <form class="formContacto" action="" method="get">
                         <div class="formItem">
                             <label for="name">Nombre:</label>
                             <input type="text" id="name" name="name">
                         </div>
-
                         <div class="formItem">
                             <label for="lastName">Apellido:</label>
                             <input type="text" id="name" name="name">
                         </div>
-
                         <div class="formItem">
                             <label for="Phone">Telefono</label>
                             <input type="number" id="Phone" name="Phone">
                         </div>
-
                         <div class="formItem">
                             <label for="mail">Mail:</label>
                             <input type="mail" id="mail" name="mail">
                         </div>
-
+                        <br>
                         <div class="formItem">
                             <p>Sos miembro del club?</p>
                             <input type="radio" name="clubMember">
-                            <label for="clubMember"> si</label>
+                            <label for="clubMember" id="clubMember"> si</label>
                             <input type="radio" name="clubMember">
-                            <label for="clubMember"> no</label>
+                            <label for="clubMember" id="clubMember"> no</label>
                         </div>
-
+                        <br>
                         <div class="formItem">
                             <textarea type="text" name="message" id="message" rows="5" cols="30"
                                 placeholder="Escribi tu mensaje aqui"></textarea>
                         </div>
+                        <br>
                         <div class="formItem">
                             <input type="reset" value="Limpiar formulario">
                             <input type="submit" value="Enviar">

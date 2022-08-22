@@ -14,6 +14,7 @@ main {
 .navbar {
     width: 100vw;
     background-image: linear-gradient(to left, #279c7f, #12473a);
+    flex-wrap: nowrap;
     height: 3.5rem;
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@ main {
 }
 
 .navbar nav {
-    margin-top: -2rem;
+    margin-top: 12px;
     margin-right: 25px;
 }
 
@@ -99,6 +100,16 @@ body {
     justify-content: center;
     padding-top: 1rem;
 }
+.carousel img {
+    width: 55vw;
+}
+
+.carousel-control-next:hover{
+    background-image: linear-gradient(to right,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+.carousel-control-prev:hover{
+    background-image: linear-gradient(to left,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
 
 h1 {
     text-align: center;
@@ -132,6 +143,7 @@ main {
     display: flex;
     justify-content: center;
     margin-left: 2vw;
+    margin-top: 1rem;
 }
 
 .productGroup {
@@ -288,9 +300,13 @@ main {
     justify-content: center;
 }
 
-
+th {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
 
 .mainContainerTable table .creditCard img{
+    vertical-align: super;
     width: 5vw;
 }
 
@@ -328,6 +344,7 @@ h2 {
 }
 
 .tituloTopTen {
+    margin-left: -2rem;
     display: block;
     border-bottom: 2px solid #070506;
     color: #070506;
@@ -360,7 +377,7 @@ h2 {
 td {
     padding: 2rem;
     text-align: center;
-    border-bottom: 2px solid #070506;
+    border-bottom: 1px solid #070506;
 }
 
 
@@ -505,6 +522,10 @@ td {
     .userNav div a {
         display: inline-block;
     }
+    .userNav form{
+        display: flex;
+        margin-right: -10px;
+    }
 
     .navbar .userIcon {
         height: 3rem;
@@ -570,7 +591,10 @@ td {
 
     .formItem{
         margin-left: 10vw;
+    }
 
+    .noMargin{
+        margin-left: 0;
     }
 
     .formItem label{
@@ -614,4 +638,8 @@ td {
         display: flex;
         align-items: center;
     }
+    .navImg{
+        display: flex;
+    }
+
 }

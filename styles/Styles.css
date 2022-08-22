@@ -342,7 +342,10 @@ h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
 }
-
+.lightTitle{
+    text-align: center;
+    color: rgb(228, 241, 232) ;
+}
 .tituloTopTen {
     margin-left: -2rem;
     display: block;

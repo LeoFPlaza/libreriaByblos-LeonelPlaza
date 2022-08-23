@@ -14,6 +14,7 @@ main {
 .navbar {
     width: 100vw;
     background-image: linear-gradient(to left, #279c7f, #12473a);
+    flex-wrap: nowrap;
     height: 3.5rem;
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@ main {
 }
 
 .navbar nav {
-    margin-top: -2rem;
+    margin-top: 12px;
     margin-right: 25px;
 }
 
@@ -99,6 +100,16 @@ body {
     justify-content: center;
     padding-top: 1rem;
 }
+.carousel img {
+    width: 55vw;
+}
+
+.carousel-control-next:hover{
+    background-image: linear-gradient(to right,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+.carousel-control-prev:hover{
+    background-image: linear-gradient(to left,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
 
 h1 {
     text-align: center;
@@ -116,6 +127,7 @@ main {
     background-size: cover;
     background-position: center center;
     min-height: 94vh;
+    margin-bottom: 35px;
 }
 
 .main p {
@@ -131,7 +143,7 @@ main {
     display: flex;
     justify-content: center;
     margin-left: 2vw;
-    margin-bottom: 35px;
+    margin-top: 1rem;
 }
 
 .productGroup {
@@ -195,7 +207,12 @@ main {
 
 .formItem label {
     display: inline-block;
-    width: 100px;
+    text-align: center;
+    width: 15vw;
+}
+
+#newsletter, #clubMember{
+    text-align: start;
 }
 
 #itemLogin label {
@@ -203,13 +220,24 @@ main {
 }
 
 .formItem input[type=mail] {
-    width: 280px;
+    width: 20vw;
 }
 
-.formItem input[type=radio] {
+.formItem input[type=text] {
+    width: 15vw;
+}
+
+.formItem input[type=password] {
+    width: 15vw;
+}
+
+.formItem input[type=radio]{
     margin: 10px;
 }
 
+.formItem input[type=checkbox]{
+    margin-right: 10px;
+}
 
 .formItem textarea {
     display: inline-block;
@@ -272,9 +300,16 @@ main {
     justify-content: center;
 }
 
-.mainContainerTable table .creditCard {
-    background-color: #504ee7;
+th {
+    border-bottom: 1px solid black;
+    text-align: center;
 }
+
+.mainContainerTable table .creditCard img{
+    vertical-align: super;
+    width: 5vw;
+}
+
 
 .mainContainerTable table td {
     padding: 0.5rem;
@@ -307,8 +342,12 @@ h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
 }
-
+.lightTitle{
+    text-align: center;
+    color: rgb(228, 241, 232) ;
+}
 .tituloTopTen {
+    margin-left: -2rem;
     display: block;
     border-bottom: 2px solid #070506;
     color: #070506;
@@ -341,7 +380,7 @@ h2 {
 td {
     padding: 2rem;
     text-align: center;
-    border-bottom: 2px solid #070506;
+    border-bottom: 1px solid #070506;
 }
 
 
@@ -437,9 +476,6 @@ td {
         width: 93vw;
     }
 
-    .location {
-        margin-bottom: 35px;
-    }
 
     .location iframe {
         width: 95vw;
@@ -465,6 +501,22 @@ td {
         padding: 5px;
     }
 
+.formItem label {
+    width: 20vw;
+}
+
+.formItem input[type=mail] {
+    width: 25vw;
+}
+
+.formItem input[type=text] {
+    width: 20vw;
+}
+
+.formItem input[type=password] {
+    width: 20vw;
+}
+
 }
 
 /*****************************MEDIA QUERYS PANTALLAS PEQUEÑAS****************************/
@@ -472,6 +524,10 @@ td {
 
     .userNav div a {
         display: inline-block;
+    }
+    .userNav form{
+        display: flex;
+        margin-right: -10px;
     }
 
     .navbar .userIcon {
@@ -528,6 +584,65 @@ td {
     .tableCatalog table tr th,
     td {
         padding: 0;
+    }
+
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formItem{
+        margin-left: 10vw;
+    }
+
+    .noMargin{
+        margin-left: 0;
+    }
+
+    .formItem label{
+        width: 30vw;
+    }
+
+    .formItem input[type=text]{
+        width: 40vw;
+    }
+
+
+    .formItem input[type=mail]{
+        width: 40vw;
+    }
+
+
+    .formItem input[type=password]{
+        width: 40vw;
+    }
+
+    .formItem textarea {
+        width: 90vw;
+    }
+
+    .formItem input[type=submit]{
+        margin-right: 15vw;
+    }
+
+    .formItem input[type=reset]{
+        margin-right: 10vw;
+    }
+    .location{
+        margin-left: 5vw;
+    }
+
+    .mainContainerTable table .creditCard img{
+        width: 10vw;
+    }
+
+    .newsletter{
+        display: flex;
+        align-items: center;
+    }
+    .navImg{
+        display: flex;
     }
 
 }

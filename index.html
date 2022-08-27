@@ -13,73 +13,71 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/iconos/logo.png" alt="Logo de Byblo's" class="logo">
+                </a>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./assets/iconos/logo.png" alt="Logo de Byblo's" class="logo">
-            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Pages/formularioContacto.html" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Pages/promociones.html" class="nav-link">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Pages/catalogo.html" class="nav-link">Tienda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mi Club
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/clubLogin.html">El club</a></li>
+                                <li><a class="dropdown-item disabled" href="#">Mi perfil (en construcción)</a></li>
+                                <li><a class="dropdown-item disabled" href="#">Eventos (en construcción)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <div class="container-fluid user-conteiner">
+                                        <a class="navbar-brand" href="#">
+                                            <img src="./assets/iconos/UserIcon.png" alt="icono de usuario"
+                                                class="userIcon" class="d-inline-block align-text-top" />
+                                        </a>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mi Club
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pages/clubLogin.html">El club</a></li>
-                            <li><a class="dropdown-item disabled" href="#">Mi perfil (en construcción)</a></li>
-                            <li><a class="dropdown-item disabled" href="#">Eventos (en construcción)</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <div class="container-fluid user-conteiner">
-                                    <a class="navbar-brand" href="#">
-                                        <img src="./assets/iconos/UserIcon.png" alt="icono de usuario" class="userIcon"
-                                            class="d-inline-block align-text-top" />
-                                    </a>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </li>
-
-                            <li><p class="dropdown-item logOut mb-0">Cerrar sesión</p></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                                <li>
+                                    <p class="dropdown-item logOut mb-0">Cerrar sesión</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- unordered list/ menu -->
+        </nav>
+    </header>
+ 
     <!-- <header class="navbar">
         <div class="userNav">
-            <div class="navImg">
-                <a href="./Pages/clubLogin.html">
-                    <img src="./assets/iconos/UserIcon.png" alt="icono de usuario" class="userIcon" />
-                </a>
-                <a href="./index.html">
-                    <img src="./assets/iconos/logo.png" alt="Logo de Byblo's" class="logoMobile" />
-                </a>
-            </div>
 
             <form action="#" method="get">
                 <input type="search" placeholder="Buscar...">
@@ -94,7 +92,9 @@
         <nav>
             <ul>
                 <li>
-                    <a href="./index.html">Inicio</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
                 </li>
                 <li>
                     <a href="./Pages/formularioContacto.html">Contacto</a>

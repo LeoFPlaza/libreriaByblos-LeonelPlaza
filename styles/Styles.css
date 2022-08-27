@@ -12,17 +12,12 @@ main {
 }
 
  .navbar {
-    background-image: linear-gradient(to left, #279c7f, #12473a);
+    background-image: linear-gradient(to right, #279c7f, #12473a);
+    padding-bottom: 0;
 }
-/*
-.navbar nav {
-    margin-top: 12px;
-    margin-right: 25px;
+.navbar ul li:hover {
+    background-image: linear-gradient(to bottom, #279c7f00 40%, #cefcf0);
 }
-
-.navbar .userNav {
-    display: flex;
-}*/
 
 .navbar .userIcon {
     height: 2rem;
@@ -45,68 +40,25 @@ main {
     color: red;
     cursor: pointer;
 }
-/*
-.navbar form {
-    margin-top: 1.3rem;
-}
-
-.navbar form input {
-    border-radius: 10px;
-    padding-left: 20px;
-    border: 1px solid black;
-}
-
-.navbar form button {
-    padding: 2px;
-    border: none;
-    border-radius: 3px;
-    background-color: #FAFAFA;
-}
-
-.navbar .logoMobile {
-    display: none;
-    border-radius: 47%;
-    height: 3rem;
-    margin-top: 0.2rem;
-}*/
 
 .navbar .logo {
     border-radius: 47%;
     height: 2.3rem;
 }
 
-/*
-.navbar ul {
-    font-size: 15px;
-    display: flex;
-    margin-top: 30px;
-    margin-right: 5px;
-}
-
-.navbar li {
-    list-style: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.3rem;
-    align-items: center;
-}
-
-.navbar li:hover {
-    background-color: #FAFAFA;
-    transition: 200ms;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-} */
-
 body {
     background-color: #FAFAFA;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .carousel {
     display: flex;
+    width: 56vw;
     justify-content: center;
     padding-top: 1rem;
 }

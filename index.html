@@ -13,8 +13,64 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/iconos/logo.png" alt="Logo de Byblo's" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mi Club
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/clubLogin.html">El club</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Mi perfil (en construcción)</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Eventos (en construcción)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="container-fluid user-conteiner">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="./assets/iconos/UserIcon.png" alt="icono de usuario" class="userIcon"
+                                            class="d-inline-block align-text-top" />
+                                    </a>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </li>
+
+                            <li><p class="dropdown-item logOut mb-0">Cerrar sesión</p></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <!-- unordered list/ menu -->
-    <header class="navbar">
+    <!-- <header class="navbar">
         <div class="userNav">
             <div class="navImg">
                 <a href="./Pages/clubLogin.html">
@@ -54,7 +110,9 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+
     <main>
         <div class="main">
             <div class="carousel">
@@ -111,7 +169,7 @@
                             <p class="card-text">Bajo la misma estrella - John Green.</p>
                         </div>
                     </div>
-                    
+
 
                     <div class="card producto" style="width: 18rem;">
                         <img src="./assets/imagenes/libro2.jpg" alt="La chica de la nieve" class="card-img-top">
@@ -119,42 +177,44 @@
                             <p class="card-text">La chica de la nieve - Javier Castillo</p>
                         </div>
                     </div>
-                    
+
                     <div class="card producto" style="width: 18rem;">
                         <img src="./assets/imagenes/libro3.jfif" alt="La bestia" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">La bestia - Carmen Mola</p>
                         </div>
                     </div>
-                    
+
                     <div class="card producto" style="width: 18rem;">
-                        <img src="./assets/imagenes/libro4.jpeg" alt="Roma soy yo, la verdadera historia de Julio Cesar" class="card-img-top">
+                        <img src="./assets/imagenes/libro4.jpeg" alt="Roma soy yo, la verdadera historia de Julio Cesar"
+                            class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Roma soy yo, la verdadera historia de Julio Cesar - Santiago Posteguillo</p>
+                            <p class="card-text">Roma soy yo, la verdadera historia de Julio Cesar - Santiago
+                                Posteguillo</p>
                         </div>
                     </div>
-                    
+
                     <div class="card producto" style="width: 18rem;">
                         <img src="./assets/imagenes/libro5.jpg" alt="Los cuentos de la criada" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Los cuentos de la criada - Margaret Atwood</p>
                         </div>
                     </div>
-                    
+
                     <div class="card producto" style="width: 18rem;">
                         <img src="./assets/imagenes/libro6.jpg" alt="Cuentos de hadas" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Cuentos de hadas - Charles Perrault</p>
                         </div>
                     </div>
-                    
+
                     <div class="card producto" style="width: 18rem;">
                         <img src="./assets/imagenes/libro7.jpeg" alt="Cumbres Borrascosas" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Cumbres Borrascosas - Emily bronte</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -187,6 +247,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+
 </body>
 
 

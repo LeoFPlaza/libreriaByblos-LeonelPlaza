@@ -136,7 +136,7 @@ main {
 }
 
 .mainContainer {
-    border-radius: 5px;
+    border-radius: 15px;
     background-image: linear-gradient(110deg, #242323, #8d8787);
     width: 95vw;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@ main {
     height: 90%;
     margin: 3rem;
     border-radius: 10px;
-    background-color: #070506;
+    background-color: #181215;
     margin-top: 10px;
 }
 
@@ -170,8 +170,6 @@ main {
 }
 
 .producto img {
-    margin: 1rem;
-    width: 90%;
     transition: all 300ms;
 }
 
@@ -179,6 +177,12 @@ main {
     transform: scale(1.25);
     height: auto;
     transition: 300ms;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .producto p {

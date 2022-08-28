@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../assets/iconos/logo.png" alt="Logo de Byblo's" class="logo">
                 </a>
 
@@ -84,36 +84,43 @@
                 <div class="formContainer">
                     <h5>Para contactarte con nosotros, dejá acá tus datos y te responderemos a tu mail.</h5>
                     <form class="formContacto" action="" method="get">
-                        <div class="formItem">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="name">
+                        <label for="fullName">Nombre completo</label>
+                        <div class="input-group formItem">
+                            <input type="text" aria-label="nombres" class="form-control" placeholder="Nombres">
+                            <input type="text" aria-label="apellidos" class="form-control" placeholder="Apellidos">
                         </div>
-                        <div class="formItem">
-                            <label for="lastName">Apellido:</label>
-                            <input type="text" id="name" name="name">
+
+                        <label for="fullName">Telefono</label>
+                        <div class="input-group formItem">
+                            <input type="number" aria-label="area" class="form-control area" placeholder="cod. area">
+                            <input type="number" aria-label="numero" class="form-control" placeholder="Numero">
                         </div>
-                        <div class="formItem">
-                            <label for="Phone">Telefono</label>
-                            <input type="number" id="Phone" name="Phone">
+                        <label for="exampleInputEmail1">email</label>
+                        <div class="mb-3 formItem">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
                         </div>
-                        <div class="formItem">
-                            <label for="mail">Mail:</label>
-                            <input type="mail" id="mail" name="mail">
+                        <p>Sos miembro del club?</p>
+
+                        <div class="form-check ml-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Si
+                            </label>
                         </div>
-                        <br>
-                        <div class="formItem">
-                            <p>Sos miembro del club?</p>
-                            <input type="radio" name="clubMember">
-                            <label for="clubMember" id="clubMember"> si</label>
-                            <input type="radio" name="clubMember">
-                            <label for="clubMember" id="clubMember"> no</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                No
+                            </label>
                         </div>
-                        <br>
-                        <div class="formItem">
-                            <textarea type="text" name="message" id="message" rows="5" cols="30"
-                                placeholder="Escribi tu mensaje aqui"></textarea>
+
+                        <div class="form-floating formItem mt-0">
+                            <textarea class="form-control formItem message" placeholder="tu mensaje"
+                                id="floatingTextarea2" ></textarea>
+                                <label for="floatingTextarea2">Mensaje</label>
                         </div>
-                        <br>
+
                         <div class="formItem">
                             <input type="reset" value="Limpiar formulario">
                             <input type="submit" value="Enviar">

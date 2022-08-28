@@ -8,21 +8,18 @@
 
 main {
     min-height: 94vh;
-    margin: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-bottom: 2rem !important;
 }
 
  .navbar {
     background-image: linear-gradient(to right, #279c7f, #12473a);
     padding-bottom: 0;
 }
-.navbar ul li:hover {
-    background-image: linear-gradient(to top, #279c7f00 40%, #cefcf0);
-    border-radius: 10px;
-}
 
-.navbar ul li .dropdown-item:hover{
-    background-color: rgba(255, 255, 255, 0);
-    background-image: linear-gradient(to top, #279c7f00 40%, #cefcf0);
+.active{
+    background-image: linear-gradient(to bottom, #279c7f00 40%, #cefcf0);
     border-radius: 10px;
 }
 
@@ -65,7 +62,7 @@ body {
 
 .carousel {
     display: flex;
-    width: 56vw;
+    width: 55vw;
     justify-content: center;
     padding-top: 1rem;
 }
@@ -99,10 +96,7 @@ main {
     margin-bottom: 0;
 }
 
-.active{
-    background-image: linear-gradient(to bottom, #279c7f00 40%, #cefcf0);
-    border-radius: 10px;
-}
+
 
 .main p {
     margin: 0.2rem;
@@ -123,7 +117,7 @@ main {
 .productGroup {
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
 }
 
@@ -131,7 +125,7 @@ main {
     width: 90%;
     height: 90%;
     margin: 3rem;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #181215;
     margin-top: 10px;
 }
@@ -144,13 +138,17 @@ main {
 }
 
 .producto img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     transition: all 300ms;
 }
 
 .producto img:hover {
     transform: scale(1.25);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     height: auto;
-    transition: 300ms;
+    transition: all 300ms;
 }
 
 .card-body{
@@ -185,7 +183,6 @@ main {
 
 .formItem label {
     display: inline-block;
-    text-align: center;
     width: 15vw;
 }
 
@@ -193,34 +190,24 @@ main {
     text-align: start;
 }
 
-#itemLogin label {
-    width: 150px;
+
+#itemLogin {
+    width: 30vw;
 }
 
-.formItem input[type=mail] {
+#itemLogin label {
     width: 20vw;
 }
 
-.formItem input[type=text] {
-    width: 15vw;
+
+
+.formItem .message {
+    height: 150px;
 }
 
-.formItem input[type=password] {
-    width: 15vw;
-}
-
-.formItem input[type=radio]{
-    margin: 10px;
-}
-
-.formItem input[type=checkbox]{
-    margin-right: 10px;
-}
-
-.formItem textarea {
-    display: inline-block;
-    width: 380px;
-    height: 120px;
+.form-check-input:checked {
+    background-color: #248f74;
+    border-color: #185949;
 }
 
 .formItem input[type=reset] {
@@ -362,11 +349,13 @@ td {
 }
 
 
+
+
 .footer {
     background-color: #FAFAFA;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 2rem;
     opacity: 0.5;
 }
@@ -411,51 +400,44 @@ td {
 /*****************************MEDIA QUERYS PANTALLAS MEDIANAS****************************/
 
 @media(max-width:990px) {
-    /* .navbar {
-        height: 11rem;
+
+
+.dropdown-toggle::after{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: none;
+    border-radius: 10px;
+}
+    .active{
+        padding-top: 3px ;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        background-image: linear-gradient(to left, #279c7f00 95%, #cefcf0);
+        border-radius: 10px;
     }
 
-
-    .navbar .userNav {
-        margin-left: 10px;
-        flex-direction: column;
-        align-items: center;
+    .d-flex {
+        justify-content: flex-end;
+    }
+    .d-flex .form-control{
+        width: 30vw;
     }
 
-    .navbar .userIcon {
-        height: 4rem;
-        margin-bottom: -10px;
+    .carousel {
+        width: 95vw;
     }
-
-    .navbar .logo {
-        height: 5rem;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    } */
 
     .carousel img {
         width: 95vw;
+    }
+
+    .carousel-inner .active{
+        padding: 0;
     }
 
     h1 {
         margin-bottom: 0;
     }
 
-    .productGroup {
-        grid-template-columns: repeat(3, 32%);
-    }
-
-    .producto {
-        height: 90%;
-    }
-
-    .producto img {
-        margin-top: 10px;
-        width: 80%;
-    }
 
     .formAndLocation {
         grid-template-areas:
@@ -494,79 +476,59 @@ td {
         padding: 5px;
     }
 
-.formItem label {
-    width: 20vw;
+.form-check{
+    padding-left: 50px;
 }
 
-.formItem input[type=mail] {
-    width: 25vw;
+
+.productGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
 }
 
-.formItem input[type=text] {
-    width: 20vw;
+#itemLogin {
+    width: 70vw;
 }
 
-.formItem input[type=password] {
-    width: 20vw;
+#itemLogin label {
+    width: 60vw;
 }
-
 }
 
 /*****************************MEDIA QUERYS PANTALLAS PEQUEÑAS****************************/
 @media(max-width:480px) {
 
-    /* .userNav div a {
-        display: inline-block;
-    }
-    .userNav form{
-        display: flex;
-        margin-right: -10px;
+    .carousel {
+        width: 90vw;
     }
 
-    .navbar .userIcon {
-        height: 3rem;
-        margin-bottom: 0;
-    }
-
-    .navbar form {
-        margin-top: 2rem;
-    }
-
-    .navbar form input {
-        margin-left: 7px;
-    }
-
-    .navbar .logoMobile {
-        display: block;
-    }
-
-    .navbar .logo {
-        display: none;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    } */
 
     .producto {
-        height: 19rem;
-        margin: 0;
+        margin: 20px;
         margin-top: 10px;
     }
 
+    .producto img{
+        height:80%;
+    }
+
+    .producto p{
+        margin-bottom: auto;
+    }
 
     .productGroup {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(1, 100%);
     }
 
     .productGroup a {
         position: relative;
     }
 
+    .card-body{
+        align-items: center;
+    }
     .producto p {
         position: absolute;
-        top: 95%;
     }
 
 
@@ -594,36 +556,28 @@ td {
     }
 
     .formItem label{
-        width: 30vw;
+        margin-left: 5px;
+        width: 90%;
     }
 
-    .formItem input[type=text]{
-        width: 40vw;
-    }
-
-
-    .formItem input[type=mail]{
-        width: 40vw;
-    }
-
-
-    .formItem input[type=password]{
-        width: 40vw;
-    }
+.formItem{
+    width: 90%;
+    margin-left: 15px;
+}
+.form-check{
+    padding-left: 10px;
+}
+.form-floating>.form-control, 
+.form-floating>.form-control-plaintext {
+    height: calc(5.5rem + 2px);
+}
 
     .formItem textarea {
-        width: 90vw;
+        width: 80vw;
     }
 
-    .formItem input[type=submit]{
-        margin-right: 15vw;
-    }
-
-    .formItem input[type=reset]{
-        margin-right: 10vw;
-    }
     .location{
-        margin-left: 5vw;
+        margin-left: 3vw;
     }
 
     .mainContainerTable table .creditCard img{
@@ -634,8 +588,15 @@ td {
         display: flex;
         align-items: center;
     }
-    /* .navImg{
-        display: flex;
-    } */
+
+    #itemLogin  input{
+        padding-bottom: 0;
+        height: 8vh;
+    }
+
+    .form-select{
+        height: 8vw;
+    }
+
 
 }

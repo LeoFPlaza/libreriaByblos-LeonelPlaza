@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../assets/iconos/logo.png" alt="Logo de Byblo's" class="logo">
                 </a>
 
@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a href="./formularioContacto.html" class="nav-link">Contacto</a>
@@ -83,38 +83,47 @@
             <h1>Suscribite al Club</h1>
             <div class="formContainer">
                 <form action="/action_page.php" method="get">
-                    <div class="formItem">
-                        <label for="name">Nombre completo:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div class="formItem">
-                        <label for="mail">Mail:</label>
-                        <input type="mail" id="mail" name="mail">
-                    </div>
-                    <div class="formItem">
-                        <label for="Phone">Telefono</label>
-                        <input type="number" id="Phone" name="Phone">
-                    </div>
-                    <div class="formItem">
-                        <label for="sexo">Sexo:</label>
-                        <select name="sexo" id="sexo">
-                            <option value="mujer">Mujer</option>
-                            <option value="hombre">Hombre</option>
-                            <option value="otro">Otro</option>
+                    <div class="form-floating mb-3" id="itemLogin">
+                        <input type="text" class="form-control" id="user" placeholder="usuario">
+                        <label for="user">Nombre de usuario</label>
+                      </div>
+
+                      <div class="form-floating mb-3" id="itemLogin">
+                        <input type="mail" class="form-control" id="mail" placeholder="Mail">
+                        <label for="mail">Mail</label>
+                      </div>
+
+                      <div class="form-floating mb-3" id="itemLogin">
+                        <input type="number" class="form-control" id="telefono" placeholder="Telefono">
+                        <label for="telefono">telefono</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>...</option>
+                          <option value="Mujer">Mujer</option>
+                          <option value="Hombre">Hombre</option>
+                          <option value="Otro">Otro</option>
                         </select>
-                    </div>
-                    <div class="formItem">
-                        <label for="password">Ingresa tu contraseña:</label>
-                        <input type="password" name="password" placeholder="Contraseña">
-                    </div>
-                    <div class="formItem" id="password">
-                        <label for="password">repeti tu contraseña:</label>
-                        <input type="password" name="password2" placeholder="Repeti tu contraseña">
-                    </div>
-                    <div class="formItem newsletter">
-                        <input type="checkbox" name="newsletter">
-                        <label for="newsletter" id="newsletter">Quiero recibir novedades a mi correo</label>
-                    </div>
+                        <label for="floatingSelect">Sexo</label>
+                      </div>
+
+
+                      <div class="form-floating mb-3" id="itemLogin">
+                        <input type="password" class="form-control" id="password" placeholder="contraseña">
+                        <label for="password">Ingresa tu contraseña</label>
+                      </div>
+
+                      <div class="form-floating mb-3" id="itemLogin">
+                        <input type="password" class="form-control" id="password" placeholder="contraseña">
+                        <label for="password">Repetí tu contraseña</label>
+                      </div>
+
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="newsletter" id="newsletter" checked>
+                        <label class="form-check-label" for="newsletter">Quiero recibir novedades a mi correo</label>
+                      </div>
+
                     <div class="formItem botones">
                         <input type="reset" value="Limpiar formulario">
                         <input type="submit" value="Enviar">

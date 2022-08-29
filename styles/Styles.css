@@ -6,119 +6,24 @@
     font-family: 'Mukta', sans-serif;
 }
 
-main {
-    min-height: 94vh;
-    margin: 0 auto;
-}
-
-.navbar {
-    width: 100vw;
-    background-image: linear-gradient(to left, #279c7f, #12473a);
-    flex-wrap: nowrap;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar nav {
-    margin-top: 12px;
-    margin-right: 25px;
-}
-
-.navbar .userNav {
-    display: flex;
-}
-
-.navbar .userIcon {
-    height: 3rem;
-    margin: 0.3rem;
-}
-
-.navbar form {
-    margin-top: 1.3rem;
-}
-
-.navbar form input {
-    border-radius: 10px;
-    padding-left: 20px;
-    border: 1px solid black;
-}
-
-.navbar form button {
-    padding: 2px;
-    border: none;
-    border-radius: 3px;
-    background-color: #FAFAFA;
-}
-
-.navbar .logoMobile {
-    display: none;
-    border-radius: 47%;
-    height: 3rem;
-    margin-top: 0.2rem;
-}
-
-.navbar .logo {
-    border-radius: 47%;
-    height: 3rem;
-    margin-top: 0.2rem;
-}
-
-
-.navbar ul {
-    font-size: 15px;
-    display: flex;
-    margin-top: 30px;
-    margin-right: 5px;
-}
-
-.navbar li {
-    list-style: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.3rem;
-    align-items: center;
-}
-
-.navbar li:hover {
-    background-color: #FAFAFA;
-    transition: 200ms;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-}
+                                                        /*etiquetas de uso comun */
+/******//****BODY*****//*****/
 
 body {
     background-color: #FAFAFA;
 }
 
-.carousel {
+/* MAIN */
+
+.main{
     display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-}
-.carousel img {
-    width: 55vw;
+    flex-direction: column;
+    align-items: center;
 }
 
-.carousel-control-next:hover{
-    background-image: linear-gradient(to right,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
-}
-.carousel-control-prev:hover{
-    background-image: linear-gradient(to left,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
-}
-
-h1 {
-    text-align: center;
-    padding-top: 1.5rem;
-    margin-bottom: 1rem;
-}
 
 main {
-    margin-top: 0;
+    margin: 0;
     /* background color como backup para la imagen de fondo */
     background-color: rgb(228, 241, 232);
     background-image: url("../assets/background.jpg");
@@ -126,8 +31,9 @@ main {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    min-height: 98vh;
     min-height: 94vh;
-    margin-bottom: 35px;
+    margin-bottom: 2rem;
 }
 
 .main p {
@@ -135,260 +41,78 @@ main {
     line-height: 16px;
 }
 
-.mainContainer {
-    border-radius: 5px;
-    background-image: linear-gradient(110deg, #242323, #8d8787);
-    width: 95vw;
-    flex-wrap: wrap;
+/******//****NAVBAR*****//*****/
+
+ .navbar {
+    background-image: linear-gradient(to right, #279c7f, #12473a);
+    padding-bottom: 0;
+}
+
+.navbar .userIcon {
+    height: 2rem;
+    margin: 0;
+}
+
+.navbar .logo {
+    border-radius: 47%;
+    height: 2.3rem;
+}
+
+.user-conteiner{
     display: flex;
-    justify-content: center;
-    margin-left: 2vw;
-    margin-top: 1rem;
-}
-
-.productGroup {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    justify-content: center;
-    justify-items: center;
-}
-
-.producto {
-    width: 90%;
-    height: 90%;
-    margin: 3rem;
-    border-radius: 10px;
-    background-color: #070506;
-    margin-top: 10px;
-}
-
-
-.producto a {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.producto img {
-    margin: 1rem;
-    width: 90%;
-    transition: all 300ms;
+.fa-cart-shopping{
+    margin-left: -11px;
+}
+.logOut{
+    color: tomato;
 }
 
-.producto img:hover {
-    transform: scale(1.25);
-    height: auto;
-    transition: 300ms;
+.logOut:hover{
+    color: red;
+    cursor: pointer;
 }
 
-.producto p {
-    text-align: center;
-    color: #FAFAFA;
+.navbar-nav a{
+    top:4px;
 }
-
-
-
-.formContainer {
-    grid-area: formContainer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.formContainer h5 {
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.formItem {
-    margin: 10px;
-}
-
-.formItem label {
-    display: inline-block;
-    text-align: center;
-    width: 15vw;
-}
-
-#newsletter, #clubMember{
-    text-align: start;
-}
-
-#itemLogin label {
-    width: 150px;
-}
-
-.formItem input[type=mail] {
-    width: 20vw;
-}
-
-.formItem input[type=text] {
-    width: 15vw;
-}
-
-.formItem input[type=password] {
-    width: 15vw;
-}
-
-.formItem input[type=radio]{
-    margin: 10px;
-}
-
-.formItem input[type=checkbox]{
-    margin-right: 10px;
-}
-
-.formItem textarea {
-    display: inline-block;
-    width: 380px;
-    height: 120px;
-}
-
-.formItem input[type=reset] {
-    color: #FAFAFA;
-    background-color: #070506;
-    border: 1px solid #303030;
-    padding: 2px;
+.navbar-nav a{
     position: relative;
-    float: right;
 }
-
-.formItem input[type=submit] {
-    color: #FAFAFA;
-    background-color: #48b9a1;
-    border: 1px solid #4ba578;
-    padding: 2px;
-}
-
-.formItem input[type=button] {
-    color: #FAFAFA;
-    background-color: #070506;
-    border: #303030;
-    padding: 2px;
-    position: relative;
-    float: right;
-}
-
-.formItem #newsletter {
-    width: 300px;
-    font-size: 12px;
-}
-
-.formPass label {
-    width: 300px;
-}
-
-.formPass input {
-    margin-left: 100px;
-}
-
-
-.location iframe {
-    width: 600px;
-    height: 400px;
-    border: 0px;
-}
-
-.cabecera {
-    background-color: #504ee7;
-}
-
-
-.mainContainerTable {
-    display: flex;
-    justify-content: center;
-}
-
-th {
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-
-.mainContainerTable table .creditCard img{
-    vertical-align: super;
-    width: 5vw;
-}
-
-
-.mainContainerTable table td {
-    padding: 0.5rem;
-}
-
-
-.formAndLocation {
-    display: grid;
-    grid-template-areas:
-        "formContainer formContainer location location"
-        "formContainer formContainer location location"
-        "formContainer formContainer location location"
-        "formContainer formContainer location location";
-    justify-content: space-around;
-
-}
-
-.location {
-    grid-area: location;
-    margin-top: 5rem;
-}
-
-.topTen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h2 {
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-}
-.lightTitle{
-    text-align: center;
-    color: rgb(228, 241, 232) ;
-}
-.tituloTopTen {
-    margin-left: -2rem;
-    display: block;
-    border-bottom: 2px solid #070506;
-    color: #070506;
-    background-color: #504ee7;
-    text-align: center;
-    padding: 3px;
-}
-
-
-.topTen ol {
-    margin: 0.5rem;
-    color: #FAFAFA;
-    background-color: #303030;
-    border: 2px solid #070506;
-}
-
-.topTen ol li {
-    padding: 2px;
-}
-
-.tableCatalog {
-    margin-top: 2rem;
-}
-
-.tableCatalog table {
+.navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-}
+    height: 6px;
+    background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar-nav a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .navbar-nav a::before {
+    transform-origin: center;
+  }
 
-.tableCatalog table tr th,
-td {
-    padding: 2rem;
-    text-align: center;
-    border-bottom: 1px solid #070506;
-}
+
+/******//****FOOTER*****//*****/
 
 
 .footer {
     background-color: #FAFAFA;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 2rem;
     opacity: 0.5;
 }
@@ -415,54 +139,340 @@ td {
 }
 
 
+/******//****MODAL LOGOUT*****//*****/
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.modal-body .fa-circle-xmark{
+    color: rgb(211, 35, 73);
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/******//****TITULOS*****//*****/
+
+h1 {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+}
+/******//****FORMS*****//*****/
+
+.formContainer {
+    grid-area: formContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formContainer h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.formItem {
+    margin: 10px;
+}
+
+.formItem label {
+    display: inline-block;
+    width: 15vw;
+}
+#itemLogin {
+    width: 30vw;
+}
+
+#itemLogin label {
+    width: 20vw;
+}
+.form-check-input:checked {
+    background-color: #248f74;
+    border-color: #185949;
+}
+.formItem input[type=reset] {
+    color: #FAFAFA;
+    background-color: #070506;
+    border: 1px solid #303030;
+    padding: 2px;
+    position: relative;
+    float: right;
+}
+
+.formItem input[type=submit] {
+    color: #FAFAFA;
+    background-color: #48b9a1;
+    border: 1px solid #4ba578;
+    padding: 2px;
+}
+
+.formItem input[type=button] {
+    color: #FAFAFA;
+    background-color: #070506;
+    border: #303030;
+    padding: 2px;
+    position: relative;
+    float: right;
+}
+/******//****TABLAS*****//*****/
+
+th {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+
+                                                        /*etiquetas del index*/
+
+/******//****CAROUSEL*****//*****/
+                                     
+.carousel {
+    display: flex;
+    width: 55vw;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.carousel img {
+    width: 55vw;
+}
+
+.carousel-control-next:hover{
+    background-image: linear-gradient(to right,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+.carousel-control-prev:hover{
+    background-image: linear-gradient(to left,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+
+/******//****CONTENEDOR DE RECOMENDACIONES*****//*****/
+
+.mainContainer {
+    border-radius: 15px;
+    background-image: linear-gradient(110deg, #242323, #8d8787);
+    width: 95vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-top: 1rem;
+}
+.lightTitle{
+    text-align: center;
+    color: rgb(228, 241, 232) ;
+}
+/******//****CONTENEDOR DE TARJETAS*****//*****/
+
+.productGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-around;
+    justify-items: center;
+}
+
+/******//****TARJETAS*****//*****/
+
+.producto {
+    width: 90%;
+    height: 90%;
+    margin: 3rem;
+    border-radius: 20px;
+    background-color: #181215;
+    margin-top: 10px;
+}
+.producto a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: all 300ms;
+}
+
+.producto img:hover {
+    transform: scale(1.25);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: auto;
+    transition: all 300ms;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.producto p {
+    text-align: center;
+    color: #FAFAFA;
+}
+
+
+                                                        /*etiquetas del catalogo */
+
+/******//****TABLA TOP TEN*****//*****/
+
+.topTen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topTen ol {
+    margin: 0.5rem;
+    color: #FAFAFA;
+    background-color: #303030;
+    border: 2px solid #070506;
+}
+
+.topTen ol li {
+    padding: 2px;
+}
+.tituloTopTen {
+    margin-left: -2rem;
+    display: block;
+    border-bottom: 2px solid #070506;
+    color: #070506;
+    background-color: #504ee7;
+    text-align: center;
+    padding: 3px;
+}
+
+/******//****CATALOGO*****//*****/
+
+.tableCatalog {
+    margin-top: 2rem;
+}
+
+.tableCatalog table {
+    width: 100%;
+}
+
+.tableCatalog table tr th,
+td {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #070506;
+}
+
+
+                                                        /*etiquetas del Club login */
+
+/******//****CHECKS NEWSLETTER*****//*****/
+
+.formItem #newsletter {
+    width: 300px;
+    font-size: 12px;
+}
+#newsletter, #clubMember{
+    text-align: start;
+}
+
+                                                        /*etiquetas del subscripcion al club */
+
+
+
+                                                        /*etiquetas del contacto */
+
+/******//****CONTENEDOR GENERAL*****//*****/
+
+.formAndLocation {
+    display: grid;
+    grid-template-areas:
+        "formContainer formContainer location location"
+        "formContainer formContainer location location"
+        "formContainer formContainer location location"
+        "formContainer formContainer location location";
+    justify-content: space-around;
+
+}
+
+/******//****FORM*****//*****/
+
+.formItem .message {
+    height: 150px;
+}
+
+/******//****IFRAME*****//*****/
+
+.location {
+    grid-area: location;
+    margin-top: 5rem;
+}
+.location iframe {
+    width: 600px;
+    height: 400px;
+    border: 0px;
+}
+
+
+                                                        /*etiquetas de promociones */
+                                                        
+/******//****TABLA DE PROMOS*****//*****/
+.mainContainerTable {
+    display: flex;
+    justify-content: center;
+}
+.cabecera {
+    background-color: #504ee7;
+}
+
+.mainContainerTable table .creditCard img{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 5vw;
+}
+
+.mainContainerTable table td {
+    padding: 0.5rem;
+}
+
 /*****************************MEDIA QUERYS PANTALLAS MEDIANAS****************************/
 
 @media(max-width:990px) {
-    .navbar {
-        height: 11rem;
+
+
+.dropdown-toggle::after{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: none;
+    border-radius: 10px;
+}
+
+    .d-flex {
+        justify-content: flex-end;
+    }
+    .d-flex .form-control{
+        width: 30vw;
     }
 
-
-    .navbar .userNav {
-        margin-left: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .userIcon {
-        height: 4rem;
-        margin-bottom: -10px;
-    }
-
-    .navbar .logo {
-        height: 5rem;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
+    .carousel {
+        width: 95vw;
     }
 
     .carousel img {
         width: 95vw;
     }
 
+    .carousel-inner .active{
+        padding: 0;
+    }
+
     h1 {
         margin-bottom: 0;
     }
 
-    .productGroup {
-        grid-template-columns: repeat(3, 32%);
-    }
-
-    .producto {
-        height: 90%;
-    }
-
-    .producto img {
-        margin-top: 10px;
-        width: 80%;
-    }
 
     .formAndLocation {
         grid-template-areas:
@@ -501,79 +511,59 @@ td {
         padding: 5px;
     }
 
-.formItem label {
-    width: 20vw;
+.form-check{
+    padding-left: 50px;
 }
 
-.formItem input[type=mail] {
-    width: 25vw;
+
+.productGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
 }
 
-.formItem input[type=text] {
-    width: 20vw;
+#itemLogin {
+    width: 70vw;
 }
 
-.formItem input[type=password] {
-    width: 20vw;
+#itemLogin label {
+    width: 60vw;
 }
-
 }
 
 /*****************************MEDIA QUERYS PANTALLAS PEQUEÑAS****************************/
 @media(max-width:480px) {
 
-    .userNav div a {
-        display: inline-block;
-    }
-    .userNav form{
-        display: flex;
-        margin-right: -10px;
+    .carousel {
+        width: 90vw;
     }
 
-    .navbar .userIcon {
-        height: 3rem;
-        margin-bottom: 0;
-    }
-
-    .navbar form {
-        margin-top: 2rem;
-    }
-
-    .navbar form input {
-        margin-left: 7px;
-    }
-
-    .navbar .logoMobile {
-        display: block;
-    }
-
-    .navbar .logo {
-        display: none;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .producto {
-        height: 19rem;
-        margin: 0;
+        margin: 20px;
         margin-top: 10px;
     }
 
+    .producto img{
+        height:80%;
+    }
+
+    .producto p{
+        margin-bottom: auto;
+    }
 
     .productGroup {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(1, 100%);
     }
 
     .productGroup a {
         position: relative;
     }
 
+    .card-body{
+        align-items: center;
+    }
     .producto p {
         position: absolute;
-        top: 95%;
     }
 
 
@@ -601,36 +591,28 @@ td {
     }
 
     .formItem label{
-        width: 30vw;
+        margin-left: 5px;
+        width: 90%;
     }
 
-    .formItem input[type=text]{
-        width: 40vw;
-    }
-
-
-    .formItem input[type=mail]{
-        width: 40vw;
-    }
-
-
-    .formItem input[type=password]{
-        width: 40vw;
-    }
+.formItem{
+    width: 90%;
+    margin-left: 15px;
+}
+.form-check{
+    padding-left: 10px;
+}
+.form-floating>.form-control, 
+.form-floating>.form-control-plaintext {
+    height: calc(5.5rem + 2px);
+}
 
     .formItem textarea {
-        width: 90vw;
+        width: 80vw;
     }
 
-    .formItem input[type=submit]{
-        margin-right: 15vw;
-    }
-
-    .formItem input[type=reset]{
-        margin-right: 10vw;
-    }
     .location{
-        margin-left: 5vw;
+        margin-left: 3vw;
     }
 
     .mainContainerTable table .creditCard img{
@@ -641,8 +623,15 @@ td {
         display: flex;
         align-items: center;
     }
-    .navImg{
-        display: flex;
+
+    #itemLogin  input{
+        padding-bottom: 0;
+        height: 8vh;
     }
+
+    .form-select{
+        height: 8vw;
+    }
+
 
 }

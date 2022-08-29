@@ -48,11 +48,6 @@ main {
     padding-bottom: 0;
 }
 
-.active{
-    background-image: linear-gradient(to bottom, #279c7f00 40%, #cefcf0);
-    border-radius: 10px;
-}
-
 .navbar .userIcon {
     height: 2rem;
     margin: 0;
@@ -81,6 +76,33 @@ main {
     cursor: pointer;
 }
 
+.navbar-nav a{
+    top:4px;
+}
+.navbar-nav a{
+    position: relative;
+}
+.navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar-nav a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .navbar-nav a::before {
+    transform-origin: center;
+  }
 
 
 /******//****FOOTER*****//*****/
@@ -347,6 +369,9 @@ td {
 
 
                                                         /*etiquetas del Club login */
+
+/******//****CHECKS NEWSLETTER*****//*****/
+
 .formItem #newsletter {
     width: 300px;
     font-size: 12px;
@@ -361,6 +386,7 @@ td {
 
                                                         /*etiquetas del contacto */
 
+/******//****CONTENEDOR GENERAL*****//*****/
 
 .formAndLocation {
     display: grid;
@@ -372,9 +398,15 @@ td {
     justify-content: space-around;
 
 }
+
+/******//****FORM*****//*****/
+
 .formItem .message {
     height: 150px;
 }
+
+/******//****IFRAME*****//*****/
+
 .location {
     grid-area: location;
     margin-top: 5rem;
@@ -387,24 +419,21 @@ td {
 
 
                                                         /*etiquetas de promociones */
-
-.cabecera {
-    background-color: #504ee7;
-}
-
+                                                        
+/******//****TABLA DE PROMOS*****//*****/
 .mainContainerTable {
     display: flex;
     justify-content: center;
 }
-
-
+.cabecera {
+    background-color: #504ee7;
+}
 
 .mainContainerTable table .creditCard img{
     margin-top: 3px;
     margin-bottom: 3px;
     width: 5vw;
 }
-
 
 .mainContainerTable table td {
     padding: 0.5rem;
@@ -420,13 +449,6 @@ td {
     background-image: none;
     border-radius: 10px;
 }
-    .active{
-        padding-top: 3px ;
-        padding-bottom: 3px;
-        padding-left: 15px;
-        background-image: linear-gradient(to left, #279c7f00 95%, #cefcf0);
-        border-radius: 10px;
-    }
 
     .d-flex {
         justify-content: flex-end;

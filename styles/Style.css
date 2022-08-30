@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta', sans-serif; }
+
+.navbar {
+  background-image: linear-gradient(to right, #279c7f, #12473a);
+  padding-bottom: 0; }
+  .navbar .userIcon {
+    height: 2rem;
+    margin: 0; }
+  .navbar .logo {
+    border-radius: 47%;
+    height: 2.3rem; }
+  .navbar .navbar-nav a {
+    top: 4px;
+    position: relative; }
+  .navbar .navbar-nav a::before {
+    transform-origin: center; }
+  .navbar .navbar-nav a:hover::before {
+    transform: scaleX(1); }
+  .navbar .navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out; }
+  .navbar .navbar-nav .userIcon {
+    height: 2rem;
+    margin: 0; }
+  .navbar .navbar-nav .user-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navbar .navbar-nav .user-conteiner .fa-cart-shopping {
+      margin-left: -11px; }
+  .navbar .navbar-nav .logOut {
+    color: tomato; }
+  .navbar .navbar-nav .logOut:hover {
+    color: red;
+    cursor: pointer; }
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .modal-body .fa-circle-xmark {
+    color: #d32349; }
+
+.modal-footer {
+  display: flex;
+  justify-content: space-evenly; }
+
+main {
+  margin: 0;
+  /* background color como backup para la imagen de fondo */
+  background-color: #e4f1e8;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  min-height: 98vh;
+  min-height: 94vh;
+  margin-bottom: 2rem; }
+  main .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .main .main p {
+      margin: 0.2rem;
+      line-height: 16px; }
+  main h1 {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem; }
+  main h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px; }
+
+.footer {
+  background-color: #FAFAFA;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 2rem;
+  opacity: 0.5; }
+  .footer ul {
+    display: flex;
+    align-items: center;
+    float: right;
+    list-style: none; }
+    .footer ul .redes {
+      margin: 3px; }
+      .footer ul .redes a img {
+        height: 1.3rem;
+        width: 1.3rem; }
+      .footer ul .redes #facebookIcon {
+        height: 1.9rem;
+        width: 1.9rem; }
+
+/******/
+/****FORMS*****/
+/*****/
+.formContainer {
+  grid-area: formContainer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .formContainer h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; }
+  .formContainer .formItem {
+    margin: 10px; }
+    .formContainer .formItem label {
+      display: inline-block;
+      width: 15vw; }
+    .formContainer .formItem input[type=reset] {
+      color: #FAFAFA;
+      background-color: #070506;
+      border: 1px solid #303030;
+      padding: 2px;
+      position: relative;
+      float: right; }
+    .formContainer .formItem input[type=submit] {
+      color: #FAFAFA;
+      background-color: #48b9a1;
+      border: 1px solid #4ba578;
+      padding: 2px; }
+    .formContainer .formItem input[type=button] {
+      color: #FAFAFA;
+      background-color: #070506;
+      border: #303030;
+      padding: 2px;
+      position: relative;
+      float: right; }
+  .formContainer #itemLogin {
+    width: 30vw; }
+    .formContainer #itemLogin label {
+      width: 20vw; }
+  .formContainer .form-check-input:checked {
+    background-color: #248f74;
+    border-color: #185949; }
+
+th {
+  border-bottom: 1px solid black;
+  text-align: center; }
+
+.carousel {
+  display: flex;
+  width: 55vw;
+  justify-content: center;
+  padding-top: 1rem; }
+  .carousel img {
+    width: 55vw; }
+  .carousel .carousel-control-next:hover {
+    background-image: linear-gradient(to right, rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692)); }
+  .carousel .carousel-control-prev:hover {
+    background-image: linear-gradient(to left, rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692)); }
+
+.mainContainer {
+  border-radius: 15px;
+  background-image: linear-gradient(110deg, #242323, #8d8787);
+  width: 95vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-left: 2vw;
+  margin-top: 1rem; }
+  .mainContainer .lightTitle {
+    text-align: center;
+    color: #e4f1e8; }
+  .mainContainer .productGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-around;
+    justify-items: center; }
+    .mainContainer .productGroup .producto {
+      width: 90%;
+      height: 90%;
+      margin: 3rem;
+      border-radius: 20px;
+      background-color: #181215;
+      margin-top: 10px; }
+      .mainContainer .productGroup .producto a {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .mainContainer .productGroup .producto img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        transition: all 300ms; }
+      .mainContainer .productGroup .producto img:hover {
+        transform: scale(1.25);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        height: auto;
+        transition: all 300ms; }
+      .mainContainer .productGroup .producto p {
+        text-align: center;
+        color: #FAFAFA; }
+    .mainContainer .productGroup .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }

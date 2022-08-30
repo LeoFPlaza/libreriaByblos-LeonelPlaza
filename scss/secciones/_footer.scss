@@ -1,0 +1,36 @@
+.footer {
+    background-color: #FAFAFA;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 2rem;
+    opacity: 0.5;
+
+    ul {
+        display: flex;
+        align-items: center;
+        float: right;
+        list-style: none;
+        .redes {
+            margin: 3px;
+
+            a img {
+                height: 1.3rem;
+                width: 1.3rem;
+            }
+            #facebookIcon {
+                height: 1.9rem;
+                width: 1.9rem;
+            }
+    
+        }        
+
+    }
+    
+}
+
+
+
+
+
+

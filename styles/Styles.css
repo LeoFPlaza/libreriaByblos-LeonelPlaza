@@ -132,6 +132,7 @@ main {
 }
 
 .footer ul {
+    margin-right: 24px;
     display: flex;
     align-items: center;
     float: right;

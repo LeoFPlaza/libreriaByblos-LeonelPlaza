@@ -1,0 +1,27 @@
+.formAndLocation {
+    display: grid;
+    grid-template-areas:
+        "formContainer formContainer location location"
+        "formContainer formContainer location location"
+        "formContainer formContainer location location"
+        "formContainer formContainer location location";
+    justify-content: space-around;
+
+
+    .formItem{
+        .message{height: 150px;
+        }
+    }
+
+    .location {
+        grid-area: location;
+        margin-top: 5rem;
+
+        iframe {
+            width: 600px;
+            height: 400px;
+            border: 0px;
+        }
+    }
+
+}

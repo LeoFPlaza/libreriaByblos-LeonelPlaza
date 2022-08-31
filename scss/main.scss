@@ -1,7 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Mukta', sans-serif;
 }
 
-@import 'secciones/header', 'secciones/main','secciones/footer','secciones/formsAndTables', 'secciones/index'
+@import './variables/typos';
+
+@import './secciones/catalogo';
+@import './secciones/clubLogin';
+@import './secciones/clubSubscripcion';
+@import './secciones/contacto';
+@import './secciones/footer';
+@import './secciones/formsAndTables';
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/main';
+@import './secciones/promociones';
+@import './secciones/mediumScreenQuery';
+@import './secciones/mobileQuery';
+

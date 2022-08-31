@@ -1,5 +1,5 @@
 .navbar {
-    background-image: linear-gradient(to right, #279c7f, #12473a);
+    background-image: linear-gradient(to right, #3d3d3d, #040505);
     padding-bottom: 0;
 
     .userIcon {
@@ -15,8 +15,9 @@
     .navbar-nav {
         li {
             font-family: $headerFont;
-
             a {
+                color: #fafafa;
+                font-weight: 400;
                 top: 4px;
                 position: relative;
 
@@ -39,30 +40,49 @@
                 }
 
             }
-        }
-
-        .userIcon {
-            height: 2rem;
-            margin: 0;
-        }
-
-        .user-conteiner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .fa-cart-shopping {
-                margin-left: -11px;
+            .active{
+                color: #fafafa;
+                font-weight: 700;
             }
         }
 
-        .logOut {
-            color: tomato;
-        }
+        .dropdown{
 
-        .logOut:hover {
-            color: red;
-            cursor: pointer;
+            .dropdown-menu{
+                background-image: linear-gradient(to top, #3d3d3d, #040505);
+            }
+            .userIcon {
+                height: 3rem;
+                margin: 0;
+            }
+    
+            .user-conteiner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .fa-cart-shopping {
+                    color: #040505;
+                    margin-top: 2rem;
+                    margin-left: -13px;
+                }
+            }
+    
+            .logOut {
+                color: tomato;
+            }
+    
+            .logOut:hover {
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .d-flex{
+        .btn-outline-success{
+            border: 1px solid #7f23f7;
+                color: rgb(184, 141, 204);
         }
     }
 }

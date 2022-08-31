@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Maven+Pro:wght@400;600&family=Mukta:wght@300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Maven+Pro:wght@400;600&family=Mukta:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -128,7 +128,7 @@ th {
   text-align: center; }
 
 .navbar {
-  background-image: linear-gradient(to right, #279c7f, #12473a);
+  background-image: linear-gradient(to right, #3d3d3d, #040505);
   padding-bottom: 0; }
   .navbar .userIcon {
     height: 2rem;
@@ -137,8 +137,10 @@ th {
     border-radius: 47%;
     height: 2.3rem; }
   .navbar .navbar-nav li {
-    font-family: "Varela Round", sans-serif; }
+    font-family: "M PLUS Rounded 1c", sans-serif; }
     .navbar .navbar-nav li a {
+      color: #fafafa;
+      font-weight: 400;
       top: 4px;
       position: relative; }
       .navbar .navbar-nav li a::before {
@@ -155,20 +157,30 @@ th {
         transition: transform 0.5s ease-in-out; }
       .navbar .navbar-nav li a:hover::before {
         transform: scaleX(1); }
-  .navbar .navbar-nav .userIcon {
-    height: 2rem;
+    .navbar .navbar-nav li .active {
+      color: #fafafa;
+      font-weight: 700; }
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    background-image: linear-gradient(to top, #3d3d3d, #040505); }
+  .navbar .navbar-nav .dropdown .userIcon {
+    height: 3rem;
     margin: 0; }
-  .navbar .navbar-nav .user-conteiner {
+  .navbar .navbar-nav .dropdown .user-conteiner {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .navbar .navbar-nav .user-conteiner .fa-cart-shopping {
-      margin-left: -11px; }
-  .navbar .navbar-nav .logOut {
+    .navbar .navbar-nav .dropdown .user-conteiner .fa-cart-shopping {
+      color: #040505;
+      margin-top: 2rem;
+      margin-left: -13px; }
+  .navbar .navbar-nav .dropdown .logOut {
     color: tomato; }
-  .navbar .navbar-nav .logOut:hover {
+  .navbar .navbar-nav .dropdown .logOut:hover {
     color: red;
     cursor: pointer; }
+  .navbar .d-flex .btn-outline-success {
+    border: 1px solid #7f23f7;
+    color: #b88dcc; }
 
 .modal-body {
   display: flex;

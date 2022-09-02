@@ -1,0 +1,41 @@
+
+
+
+
+main {
+    font-family: $mainFont;
+    margin: 0;
+    /* background color como backup para la imagen de fondo */
+    background-color: rgb(228, 241, 232);
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    min-height: 98vh;
+    min-height: 94vh;
+    margin-bottom: 2rem;
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main p {
+            margin: 0.2rem;
+            line-height: 16px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+    }
+}
+
+

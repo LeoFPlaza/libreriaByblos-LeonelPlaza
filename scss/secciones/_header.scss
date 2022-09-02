@@ -1,0 +1,116 @@
+.navbar {
+    background-image: linear-gradient(to right, #3d3d3d, #040505);
+    padding-bottom: 0;
+
+    .userIcon {
+        height: 2rem;
+        margin: 0;
+    }
+
+    .logo {
+        border-radius: 47%;
+        height: 2.3rem;
+    }
+
+    .navbar-nav {
+        li {
+            font-family: $headerFont;
+
+            a {
+                color: #fafafa;
+                font-weight: 400;
+                top: 4px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);
+                    z-index: 1;
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    transition: transform 0.5s ease-in-out;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+
+            }
+
+            .active {
+                color: #fafafa;
+                font-weight: 700;
+            }
+        }
+
+        .dropdown {
+
+            .dropdown-menu {
+                background-image: linear-gradient(to top, #3d3d3d, #040505);
+            }
+
+            .userIcon {
+                height: 3rem;
+                margin: 0;
+            }
+
+            .user-conteiner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fa-cart-shopping {
+                    color: rgb(235, 57, 57);
+                    // #040505;
+                    margin-top: 2rem;
+                    margin-left: -13px;
+                }
+            }
+
+            .logOut {
+                color: tomato;
+            }
+
+            .logOut:hover {
+                color: red;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .d-flex {
+        .btn-outline-success {
+            border: 1px solid #7f23f7;
+            color: rgb(184, 141, 204);
+            --bs-btn-hover-bg: #7807df;
+        }
+    }
+
+    .navbar-toggler {
+        border: 1px solid #7f23f76e;
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(126, 34, 247, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .fa-circle-xmark {
+        color: rgb(211, 35, 73);
+    }
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-evenly;
+}

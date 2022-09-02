@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './variables/fontss';
+
+@import './secciones/catalogo';
+@import './secciones/clubLogin';
+@import './secciones/clubSubscripcion';
+@import './secciones/contacto';
+@import './secciones/footer';
+@import './secciones/formsAndTables';
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/main';
+@import './secciones/promociones';
+@import './secciones/mediumScreenQuery';
+@import './secciones/mobileQuery';
+

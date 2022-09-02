@@ -1,0 +1,30 @@
+.mainContainerTable {
+    display: flex;
+    justify-content: center;
+
+    table {
+        margin-bottom: 3vw;
+        .cabecera {
+            background-color: #504ee7;
+        }
+
+        td {
+            padding: 0.5rem;
+        }
+
+        .creditCard img {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 2vw;
+        }
+
+        tr,th,
+        td {
+            padding: 1vw;
+            text-align: center;
+            border-bottom: 1px solid #070506;
+        }
+
+    }
+}
+

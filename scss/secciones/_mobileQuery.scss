@@ -1,0 +1,118 @@
+@media(max-width:480px) {
+
+    main {
+        .carousel {
+            width: 90vw;
+            height: 45vw;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .mainContainer {
+            .productGroup {
+                grid-template-columns: repeat(1, 100%);
+
+                .producto {
+                    margin: 20px;
+                    margin-top: 10px;
+
+                    img {
+                        height: 80%;
+                    }
+
+                    p {
+                        margin-bottom: auto;
+                        position: absolute;
+                    }
+
+                    a {
+                        position: relative;
+                    }
+
+                    .card-body {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .formContainer {
+            .formContacto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .formItem {
+                width: 90%;
+                margin-left: 15px;
+    
+                label {
+                    margin-left: 5px;
+                    width: 90%;
+                }
+    
+                textarea {
+                    width: 80vw;
+                }
+            }
+    
+            .form-check {
+                padding-left: 10px;
+            }
+    
+            .form-floating>.form-control,
+            .form-floating>.form-control-plaintext {
+                height: calc(5.5rem + 2px);
+            }
+    
+            .newsletter {
+                display: flex;
+                align-items: center;
+            }
+    
+            .form-select {
+                height: 8vw;
+            }
+            #itemLogin input {
+                padding-bottom: 0;
+                height: 8vh;
+            }
+        }
+    
+    }
+
+
+    .tableCatalog table {
+        width: 100vw;
+
+        tr th,
+        td {
+            padding: 0;
+        }
+    }
+
+
+
+
+
+
+
+
+    .location {
+        margin-left: 3vw;
+    }
+
+    .mainContainerTable table .creditCard img {
+        width: 10vw;
+    }
+
+
+
+
+
+
+
+}

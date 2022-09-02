@@ -1,0 +1,46 @@
+.topTen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tituloTopTen {
+        margin-left: -2rem;
+        display: block;
+        border-bottom: 2px solid #070506;
+        color: #070506;
+        background-color: #504ee7;
+        text-align: center;
+        padding: 3px;
+        h2{
+            font-family: $primaryFont;
+        }
+    }
+
+    ol {
+        margin: 0.5rem;
+        color: #FAFAFA;
+        background-color: #303030;
+        border: 2px solid #070506;
+
+        li {
+            font-family: $secondaryFont;
+            padding: 2px;
+        }
+    }
+
+}
+
+
+.tableCatalog {
+    margin-top: 2rem;
+
+    table {
+        width: 100%;
+
+       td {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #070506;
+        }
+    }
+}

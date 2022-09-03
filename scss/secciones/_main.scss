@@ -1,13 +1,9 @@
-
-
-
-
 main {
     font-family: $mainFont;
     margin: 0;
     /* background color como backup para la imagen de fondo */
     background-color: rgb(228, 241, 232);
-    background-image: url("../assets/background.jpg");
+    background-image: url("https://res.cloudinary.com/dqloye1ik/image/upload/v1662171792/Byblos/muro-hormigon-blanco_53876-92803_ficwnl.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,6 +12,20 @@ main {
     min-height: 94vh;
     margin-bottom: 2rem;
 
+    .breadcrumb{
+        margin-bottom: 0;
+        .breadcrumb-item{
+            a{
+                font-size: 15px;
+                color: #6c757d;
+                text-decoration: none;
+            }
+        }
+        .active{
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
     .main{
         display: flex;
         flex-direction: column;
@@ -29,7 +39,7 @@ main {
 
     h1 {
         text-align: center;
-        padding-top: 1.5rem;
+        padding-top: 0.5rem;
         margin-bottom: 1rem;
     }
     h2 {

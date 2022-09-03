@@ -1,0 +1,8 @@
+elementos de SEO tenidos en cuenta:
+-se agragaron etiquetas meta description y keywords, con datos especificos para cada pagina.
+-se añadieron titulos mas descriptivos para cada una de las paginas, asi como sus shortcut icon.
+-agregué un <h1> a la pagina index, y usando mixin la escondi para que cuando haya un carousel, no se vea. porque no quedaban bien ambas cosas al mismo 
+    tiempo.
+- Cambié los <h2> repetidos en promos y les puse etiqueta <h3>, para que no se repitan mas de una vez por pagina.
+- agregué breadcrumbs en cada pagina para mejorar la navegabilidad, en los de logIn y subscripcion agregue un item mas, que por ahora llevan a la pagina
+de login, pero la idea es que lleven a una pagina especifica de la pagina, la cual aun no desarrollé. Asique provisoriamente estan enrutados al login.

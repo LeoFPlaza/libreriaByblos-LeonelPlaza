@@ -1,0 +1,16 @@
+@mixin linearGradient($direction, $firstColor, $secondColor){
+    background-image: linear-gradient($direction, $firstColor, $secondColor);
+}
+
+@mixin borderBG($thick, $colorBorder, $colorBG){
+    border: $thick solid $colorBorder;
+    background-color: $colorBG;
+}
+
+%estiloHoverNav{
+    height: 6px;
+    background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);
+    transform-origin: center; 
+    transition: transform 0.5s ease-in-out;
+}
+

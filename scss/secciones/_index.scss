@@ -1,10 +1,17 @@
+$carouselDisplay: flex;
+.carouselHiden{
+        @if ($carouselDisplay != none) {
+            display: none;
+    }
+}
 .carousel {
-    display: flex;
+    display: $carouselDisplay;
     width: 55vw;
     height: 28vw;
     justify-content: center;
     margin-top: 1rem;
-    margin-bottom: 6vh;
+    margin-bottom: 1rem;
+
 
     img {
         position:relative ;

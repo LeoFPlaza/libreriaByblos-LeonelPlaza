@@ -6,9 +6,10 @@
     .tituloTopTen {
         margin-left: -2rem;
         display: block;
-        border-bottom: 2px solid #070506;
+        @include borderBG(2px, #070506, #504ee7)
+        // border-bottom: 2px solid #070506;
         color: #070506;
-        background-color: #504ee7;
+        // background-color: #504ee7;
         text-align: center;
         padding: 3px;
         h2{
@@ -17,10 +18,11 @@
     }
 
     ol {
+        @include borderBG(2px, #070506, #303030);
         margin: 0.5rem;
         color: #FAFAFA;
-        background-color: #303030;
-        border: 2px solid #070506;
+        // background-color: #303030;
+        // border: 2px solid #070506;
 
         li {
             font-family: $secondaryFont;

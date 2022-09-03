@@ -21,8 +21,9 @@
 
         input[type=reset] {
             color: #FAFAFA;
-            background-color: #070506;
-            border: 1px solid #303030;
+            @include borderBG(2px, #3b3a3b, #383636);
+            // background-color: #070506;
+            // border: 1px solid #303030;
             padding: 2px;
             position: relative;
             float: right;
@@ -30,15 +31,17 @@
 
         input[type=submit] {
             color: #FAFAFA;
-            background-color: #48b9a1;
-            border: 1px solid #4ba578;
+            @include borderBG(2px, #48b9a1, #4ba578);
+            // background-color: #48b9a1;
+            // border: 1px solid #4ba578;
             padding: 2px;
         }
 
         input[type=button] {
             color: #FAFAFA;
-            background-color: #070506;
-            border: #303030;
+            @include borderBG(2px, #3b3a3b, #383636);
+            // background-color: #070506;
+            // border: #303030;
             padding: 2px;
             position: relative;
             float: right;

@@ -8,9 +8,8 @@ main {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    min-height: 98vh;
-    min-height: 94vh;
-    margin-bottom: 2rem;
+    min-height: 74vh;
+    padding-top: 2rem;
 
     .breadcrumb{
         margin-bottom: 0;
@@ -30,6 +29,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1rem;
 
         .main p {
             margin: 0.2rem;

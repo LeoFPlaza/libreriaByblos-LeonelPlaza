@@ -1,4 +1,5 @@
 $carouselDisplay: flex;
+
 .carouselHiden{
         @if ($carouselDisplay != none) {
             display: none;
@@ -56,10 +57,13 @@ $carouselDisplay: flex;
             font-family: $primaryFont;
             width: 90%;
             height: 90%;
+            max-height: 35vw;
             margin: 3rem;
             border-radius: 20px;
             background-color: #181215;
             margin-top: 10px;
+            overflow: hidden;
+            justify-content: space-between;
 
             a {
                 display: flex;
@@ -68,6 +72,7 @@ $carouselDisplay: flex;
             }
     
             img {
+                height: 85%;
                 border-top-right-radius: 20px;
                 border-top-left-radius: 20px;
                 transition: all 300ms;
@@ -76,7 +81,6 @@ $carouselDisplay: flex;
                     transform: scale(1.25);
                     border-top-right-radius: 0;
                     border-top-left-radius: 0;
-                    height: auto;
                     transition: all 300ms;
                 }
             }
@@ -84,13 +88,15 @@ $carouselDisplay: flex;
             p {
                 text-align: center;
                 color: #FAFAFA;
+                overflow: hidden;
             }
         }
 
         .card-body {
+            max-height: 20%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
         }
 
     }

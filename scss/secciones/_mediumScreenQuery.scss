@@ -44,6 +44,10 @@
             .productGroup {
                 display: grid;
                 grid-template-columns: repeat(3, 30%);
+
+                .producto{
+                    max-height: 85%;
+                }
             }
 
         }

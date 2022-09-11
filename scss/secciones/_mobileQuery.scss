@@ -17,6 +17,8 @@
                 .producto {
                     margin: 20px;
                     margin-top: 10px;
+                    height: 98%;
+                    max-height: 98%;
 
                     img {
                         height: 80%;
@@ -94,13 +96,6 @@
         }
     }
 
-
-
-
-
-
-
-
     .location {
         margin-left: 3vw;
     }
@@ -109,10 +104,24 @@
         width: 10vw;
     }
 
+    .footer{
+        height: 21rem;
 
+        .footer-groups{
+            flex-direction: column;
+            align-items: center;
+            .listAndTitle{
+                width: 100%;
+                .redes-list{
+                    flex-direction: row;
+                }
+            }
+            .direccion ul{
+                margin-right: 0;
+            }
 
-
-
+        }
+    }
 
 
 }

@@ -6,9 +6,11 @@
     .tituloTopTen {
         margin-left: -2rem;
         display: block;
-        @include borderBG(2px, #070506, #504ee7)
-        // border-bottom: 2px solid #070506;
+        border-bottom: 2px solid #070506;
         color: #070506;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        @include borderBGI(1px,#000000,110deg, #7f23f7, #40117e);
         // background-color: #504ee7;
         text-align: center;
         padding: 3px;
@@ -18,7 +20,8 @@
     }
 
     ol {
-        @include borderBG(2px, #070506, #303030);
+        border-radius: 15px;
+        @include borderBGI(2px, #070506, 110deg, #242323, #504e4e);
         margin: 0.5rem;
         color: #FAFAFA;
         // background-color: #303030;

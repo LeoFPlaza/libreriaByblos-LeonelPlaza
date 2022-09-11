@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @include linearGradient(to right, #3d3d3d, #040505);
+    @include borderBGI(0px,#000000, to right, #3d3d3d, #040505);
+    // @include linearGradient(to right, #3d3d3d, #040505);
     position: relative;
     bottom: 0;
     width: 100vw;

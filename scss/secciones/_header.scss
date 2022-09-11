@@ -1,5 +1,5 @@
 .navbar {
-    @include linearGradient(to right, #3d3d3d, #040505);
+    @include borderBGI(0px,#000000, to right, #3d3d3d, #040505);
     // background-image: linear-gradient(to right, #3d3d3d, #040505);
     padding-bottom: 0;
     position: fixed;
@@ -51,8 +51,9 @@
         .dropdown {
 
             .dropdown-menu {
-                @include linearGradient(to top, #3d3d3d, #040505);
-                // background-image: linear-gradient(to top, #3d3d3d, #040505);
+                @include borderBGI(0px,#8f8e8e75, to top, #3d3d3d, #040505);
+                // @include linearGradient(to top, #3d3d3d, #040505);
+                margin-bottom: 5px;
             }
 
             .userIcon {

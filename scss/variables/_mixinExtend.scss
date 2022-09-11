@@ -8,6 +8,11 @@
     background-color: $colorBG;
 }
 
+@mixin borderBGI($thick, $colorBorder, $direction, $firstColor, $secondColor){
+    border: $thick solid $colorBorder;
+    background-image: linear-gradient($direction, $firstColor, $secondColor);
+}
+
 %estiloHoverNav{
     height: 6px;
     background: linear-gradient(to right, #7f23f7, #9532e6, #b966fd);

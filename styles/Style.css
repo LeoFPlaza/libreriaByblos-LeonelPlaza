@@ -16,16 +16,20 @@
   .topTen .tituloTopTen {
     margin-left: -2rem;
     display: block;
-    border: 2px solid #070506;
-    background-color: #504ee7;
+    border-bottom: 2px solid #070506;
     color: #070506;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #000000;
+    background-image: linear-gradient(110deg, #7f23f7, #40117e);
     text-align: center;
     padding: 3px; }
     .topTen .tituloTopTen h2 {
       font-family: "Kanit", sans-serif; }
   .topTen ol {
+    border-radius: 15px;
     border: 2px solid #070506;
-    background-color: #303030;
+    background-image: linear-gradient(110deg, #242323, #504e4e);
     margin: 0.5rem;
     color: #FAFAFA; }
     .topTen ol li {
@@ -68,6 +72,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  border: 0px solid #000000;
   background-image: linear-gradient(to right, #3d3d3d, #040505);
   position: relative;
   bottom: 0;
@@ -178,6 +183,7 @@ th {
   text-align: center; }
 
 .navbar {
+  border: 0px solid #000000;
   background-image: linear-gradient(to right, #3d3d3d, #040505);
   padding-bottom: 0;
   position: fixed;
@@ -211,7 +217,9 @@ th {
       color: #fafafa;
       font-weight: 700; }
   .navbar .navbar-nav .dropdown .dropdown-menu {
-    background-image: linear-gradient(to top, #3d3d3d, #040505); }
+    border: 0px solid #8f8e8e75;
+    background-image: linear-gradient(to top, #3d3d3d, #040505);
+    margin-bottom: 5px; }
   .navbar .navbar-nav .dropdown .userIcon {
     height: 3rem;
     margin: 0; }
@@ -277,7 +285,8 @@ th {
   display: flex;
   justify-content: center;
   margin-left: 2vw;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding-bottom: 1rem; }
   .mainContainer .lightTitle {
     text-align: center;
     color: #e4f1e8; }

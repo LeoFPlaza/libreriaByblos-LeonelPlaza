@@ -42,6 +42,16 @@
                 }
             }
 
+            .userSection{
+                &::before{
+                    background: none;
+                }
+
+                &:hover::before{
+                    transform: scaleX(0);
+                }
+            }
+
             .active {
                 color: #fafafa;
                 font-weight: 700;

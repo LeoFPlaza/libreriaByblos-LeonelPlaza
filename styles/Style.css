@@ -213,6 +213,10 @@ th {
         transform: scaleX(0); }
       .navbar .navbar-nav li a:hover::before {
         transform: scaleX(1); }
+    .navbar .navbar-nav li .userSection::before {
+      background: none; }
+    .navbar .navbar-nav li .userSection:hover::before {
+      transform: scaleX(0); }
     .navbar .navbar-nav li .active {
       color: #fafafa;
       font-weight: 700; }
@@ -344,7 +348,8 @@ main {
   padding-top: 2rem; }
   main .breadcrumb {
     margin-top: 1.8rem;
-    position: relative; }
+    position: relative;
+    margin-left: 8px; }
     main .breadcrumb .breadcrumb-item a {
       font-size: 15px;
       color: #6c757d;

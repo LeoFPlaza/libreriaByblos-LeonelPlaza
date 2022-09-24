@@ -5,11 +5,12 @@
             width: 90vw;
             height: 45vw;
 
-            .active{
+            .active {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+
             img {
                 height: 100%;
             }
@@ -51,44 +52,57 @@
                 flex-direction: column;
                 align-items: center;
             }
-    
+
             .formItem {
                 width: 90%;
                 margin-left: 15px;
-    
+
                 label {
                     margin-left: 5px;
                     width: 90%;
                 }
-    
-                textarea {
-                    width: 80vw;
+
+
+                input[type=email] {
+                    width: 100%;
                 }
+
+                textarea {
+                    width: 112%;
+                    padding: 0;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    margin-left: -14px;
+                }
+
             }
-    
+
             .form-check {
+                margin-left: 1rem;
                 padding-left: 10px;
             }
-    
-            .form-floating>.form-control,
-            .form-floating>.form-control-plaintext {
+
+            .form-control-plaintext {
                 height: calc(5.5rem + 2px);
             }
-    
+
             .newsletter {
                 display: flex;
                 align-items: center;
             }
-    
+
             .form-select {
                 height: 8vw;
             }
-            #itemLogin input {
-                padding-bottom: 0;
-                height: 8vh;
+
+            .form-floating {
+                input {
+                    padding-bottom: 0;
+                    height: 3.3rem;
+                }
             }
         }
-    
+
     }
 
 
@@ -109,19 +123,22 @@
         width: 10vw;
     }
 
-    .footer{
+    .footer {
         height: 21rem;
 
-        .footer-groups{
+        .footer-groups {
             flex-direction: column;
             align-items: center;
-            .listAndTitle{
+
+            .listAndTitle {
                 width: 100%;
-                .redes-list{
+
+                .redes-list {
                     flex-direction: row;
                 }
             }
-            .direccion ul{
+
+            .direccion ul {
                 margin-right: 0;
             }
 

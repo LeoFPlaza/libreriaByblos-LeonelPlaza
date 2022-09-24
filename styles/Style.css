@@ -57,6 +57,8 @@
   display: grid;
   grid-template-areas: "formContainer formContainer location location" "formContainer formContainer location location" "formContainer formContainer location location" "formContainer formContainer location location";
   justify-content: space-around; }
+  .formAndLocation .formContacto {
+    max-width: 35rem; }
   .formAndLocation .formItem .message {
     height: 150px; }
   .formAndLocation .location {
@@ -129,9 +131,9 @@
       display: inline-block;
       width: 15vw; }
     .formContainer .formItem input[type=reset] {
-      color: #383636;
+      color: #7f23f7;
       border-radius: 0.375rem;
-      border: 2px solid #3b3a3b;
+      border: 2px solid #7f23f7;
       background-color: #38363600;
       padding: 2px;
       position: relative;
@@ -140,8 +142,15 @@
       .formContainer .formItem input[type=reset]:hover {
         transition: all 200ms;
         color: #FAFAFA;
-        border: 2px solid #3b3a3b;
-        background-color: #383636; }
+        border: 2px solid #7f23f7;
+        background-color: #7f23f7; }
+    .formContainer .formItem input[type=email] {
+      width: 105%; }
+    .formContainer .formItem textarea {
+      margin: 0;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      margin-left: -10px; }
     .formContainer .formItem input[type=submit] {
       color: #4ba578;
       border-radius: 0.375rem;
@@ -155,9 +164,9 @@
         border: 2px solid #4ba578;
         background-color: #48b9a1; }
     .formContainer .formItem input[type=button] {
-      color: #383636;
+      color: #7f23f7;
       border-radius: 0.375rem;
-      border: 2px solid #3b3a3b;
+      border: 2px solid #7f23f7;
       background-color: #38363600;
       padding: 2px;
       position: relative;
@@ -166,18 +175,28 @@
       .formContainer .formItem input[type=button]:hover {
         transition: all 200ms;
         color: #FAFAFA;
-        border: 2px solid #3b3a3b;
-        background-color: #383636; }
-  .formContainer #itemLogin {
+        border: 2px solid #7f23f7;
+        background-color: #7f23f7; }
+  .formContainer .formButtons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .formContainer .form-floating {
     width: 30vw; }
-    .formContainer #itemLogin label {
+    .formContainer .form-floating label {
       width: 20vw; }
+  .formContainer .checkedTrue {
+    display: none; }
   .formContainer .form-check-input {
     background-color: #f8f8f8;
     border-color: #6e6e6e; }
     .formContainer .form-check-input:checked {
       background-color: #248f74;
       border-color: #185949; }
+      .formContainer .form-check-input:checked ~ .checkedTrue {
+        display: block; }
+      .formContainer .form-check-input:checked ~ .checkedFalse {
+        display: none; }
 
 th {
   border-bottom: 1px solid black;
@@ -434,9 +453,9 @@ main {
   main .formContainer .form-check {
     margin-left: 20px;
     padding-left: 50px; }
-  main .formContainer #itemLogin {
+  main .formContainer .form-floating {
     width: 70vw; }
-    main .formContainer #itemLogin label {
+    main .formContainer .form-floating label {
       width: 60vw; }
   .promoTable {
     width: 90%; }
@@ -487,21 +506,27 @@ main {
     main .formContainer .formItem label {
       margin-left: 5px;
       width: 90%; }
+    main .formContainer .formItem input[type=email] {
+      width: 100%; }
     main .formContainer .formItem textarea {
-      width: 80vw; }
+      width: 112%;
+      padding: 0;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      margin-left: -14px; }
   main .formContainer .form-check {
+    margin-left: 1rem;
     padding-left: 10px; }
-  main .formContainer .form-floating > .form-control,
-  main .formContainer .form-floating > .form-control-plaintext {
+  main .formContainer .form-control-plaintext {
     height: calc(5.5rem + 2px); }
   main .formContainer .newsletter {
     display: flex;
     align-items: center; }
   main .formContainer .form-select {
     height: 8vw; }
-  main .formContainer #itemLogin input {
+  main .formContainer .form-floating input {
     padding-bottom: 0;
-    height: 8vh; }
+    height: 3.3rem; }
   .tableCatalog table {
     width: 100vw; }
     .tableCatalog table tr th,

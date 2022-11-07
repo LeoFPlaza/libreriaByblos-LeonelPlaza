@@ -101,11 +101,11 @@ const cards = jsonLibros => {
 function logIn() {
   let usrInput = document.getElementById("user").value;
   let passInput = document.getElementById("password").value;
-  if (usrInput === user, passInput === password) {
-    console.log("aca estamos :) ");
-    //console.log("Si, entro con Usuario: " + usrInput + "\n" + "pass: " + passInput);
+  if (usrInput !== user, passInput !== password) {
+    console.log("Usuario: " + usrInput + "\n" + "pass: " + passInput);
   } else {
-    //console.log("Usuario: " + usrInput + "\n" + "pass: " + passInput);
+    console.log("por ahora solo llega hasta aca :) ");
+    console.log("Usuario: " + usrInput + "\n" + "pass: " + passInput);
   }
 }
 

@@ -79,6 +79,7 @@ $carouselDisplay: flex;
                 transition: all 300ms;
 
                 &:hover {
+                    cursor: pointer;
                     transform: scale(1.25);
                     border-top-right-radius: 0;
                     border-top-left-radius: 0;

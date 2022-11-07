@@ -1,5 +1,5 @@
-let user = "leoPlaza";
-let password = "Password123";
+const productGroup = document.querySelector("#productGroup");
+const CardTemplate = document.querySelector("#cardTemplate").content;
 const libros = [
   {
     "titulo": "Bajo la misma estrella",
@@ -38,7 +38,10 @@ const libros = [
     "cover": "https://res.cloudinary.com/dqloye1ik/image/upload/v1662171791/Byblos/libro3_h9kmqq.jpg",
   }
 
-]
+];
+const fragment = document.createDocumentFragment();
+let user = "leoPlaza";
+let password = "Password123";
 
 
 function logIn() {
@@ -52,33 +55,20 @@ function logIn() {
   }
 }
 
-function cardHTML() {
-  const productGroup = document.querySelector("#productGroup");
-  let card = document.createElement("div");
-  card.classList.add("card");
-  card.classList.add("producto");
-  card.classList.add("col");
-  card.classList.add("col-lg-3");
-  card.classList.add("col-md-4");
-  card.classList.add("col-sm-12");
 
-  let index = 0;
-  while (index < libros.length) {
-    let libro = libros[index];
-    let content = `
-                    <img src="${libro.cover}" alt=${libro.titulo}>
-                        <div class="card-body">
-                            <p class="card-text">${libro.titulo} - ${libro.autor}</p>
-                        </div> 
-  `;
-  //cardSelected.innerHTML = newCard;
-    card.append(content);
-    productGroup.innerHTML += card;
-    //  console.log(libro);
-    index++;
-    console.log(productGroup);
-  }
+const cards = jsonLibros => {
+  jsonLibros.forEach(libro => {
+    //console.log(libro.titulo);
+    CardTemplate.querySelector(".card-text").textContent = libro.titulo + " - " + libro.autor;
+    CardTemplate.querySelector("img").setAttribute("src", libro.cover)    
+    CardTemplate.querySelector("img").setAttribute("alt", libro.titulo)    
 
+
+    const clone = CardTemplate.cloneNode(true);
+    fragment.appendChild(clone);
+  });
+  productGroup.appendChild(fragment);
 }
 
-cardHTML();
+//cardHTML();
+cards(libros);

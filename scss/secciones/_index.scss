@@ -1,10 +1,11 @@
 $carouselDisplay: flex;
 
-.carouselHiden{
-        @if ($carouselDisplay != none) {
-            display: none;
+.carouselHiden {
+    @if ($carouselDisplay !=none) {
+        display: none;
     }
 }
+
 .carousel {
     display: $carouselDisplay;
     width: 55vw;
@@ -15,7 +16,7 @@ $carouselDisplay: flex;
 
 
     img {
-        position:relative ;
+        position: relative;
         top: 0;
         width: 55vw;
         height: 28vw;
@@ -31,6 +32,19 @@ $carouselDisplay: flex;
     }
 }
 
+.modalCarrito {
+
+    .tablaCarrito {
+        
+            margin-left: 12%;
+            tr th {
+                padding-right: 120px;
+            }
+    }
+
+}
+
+
 .mainContainer {
     border-radius: 15px;
     background-image: linear-gradient(110deg, #242323, #8d8787);
@@ -41,6 +55,7 @@ $carouselDisplay: flex;
     margin-left: 2vw;
     margin-top: 1rem;
     padding-bottom: 1rem;
+
 
     .lightTitle {
         text-align: center;
@@ -71,7 +86,7 @@ $carouselDisplay: flex;
                 flex-direction: column;
                 align-items: center;
             }
-    
+
             img {
                 height: 85%;
                 border-top-right-radius: 20px;
@@ -86,7 +101,7 @@ $carouselDisplay: flex;
                     transition: all 300ms;
                 }
             }
-    
+
             p {
                 text-align: center;
                 color: #FAFAFA;

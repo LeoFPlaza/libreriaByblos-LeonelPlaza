@@ -77,7 +77,7 @@ const carritoPush = obj => {
   }
 
   carrito[libroEnCarrito.id] = { ...libroEnCarrito }
-  console.log(carrito);
+  buildCarrito();
 
 }
 

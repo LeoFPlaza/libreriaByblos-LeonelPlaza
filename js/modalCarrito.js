@@ -10,9 +10,11 @@ const templateFooterCarrito = document.querySelector("#templateFooterCarrito").c
 const buildCarrito = () => {
     console.log(carrito);
     Object.values(carrito).forEach(libroEnCarrito =>{
+        itemsCarrito.innerHTML = '';
         templateCarrito.querySelector('th').textContent = libroEnCarrito.id;
         templateCarrito.querySelectorAll('td')[0].textContent = libroEnCarrito.titulo;
-        templateCarrito.querySelectorAll('td')[1].textContent = libroEnCarrito.cantidad * parseInt(libroEnCarrito.price);
+        templateCarrito.querySelectorAll('td')[1].textContent = libroEnCarrito.cantidad;
+        templateCarrito.querySelector('span').textContent = libroEnCarrito.cantidad * parseInt(libroEnCarrito.price);
         templateCarrito.querySelector('.btn-danger').dataset.id = libroEnCarrito.id;
         
         const cloneProducto = templateCarrito.cloneNode(true);

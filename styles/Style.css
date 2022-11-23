@@ -303,13 +303,8 @@ th {
     background-image: linear-gradient(to left, rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692)); }
 
 .modalCarrito .tablaCarrito {
-  margin-left: 15%;
-  width: 70%; }
-  .modalCarrito .tablaCarrito tr th {
-    text-align: center; }
-
-.modalCarrito .modal-content .templateCarrito td {
-  font-size: 20px;
+  margin-left: 5%;
+  width: 90%;
   text-align: center; }
 
 .mainContainer {

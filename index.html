@@ -257,11 +257,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="carritoContainer">
-                        <table class="tablaCarrito">
+                        <table class=" table table-striped tablaCarrito">
                             <thead>
                                 <tr>
                                     <th scope="col" class="idCarrito">Id</th>
                                     <th scope="col" class="titleCarrito">Libro</th>
+                                    <th scope="col" class="cantidadCarrito">Cantidad</th>
                                     <th scope="col" class="priceCarrito">Precio</th>
                                     <th scope="col" class="borrarProducto">
                                         Acciones
@@ -280,23 +281,28 @@
                     </div>
 
                     <template id="templateFooterCarrito">
-                        <th scope="row" colspan="2">Total Productos</th>
-                        <td>10</td>
-                        <td>
-                            <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Limpiar
-                                Carrito</button>
-                        </td>
-                        <td class="font-weight-bold">5000</td>
+                        <tr>
+                            <th scope="row" colspan="2">Total Productos</th>
+                            <td>10</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Limpiar
+                                    Carrito</button>
+                            </td>
+                            <td class="font-weight-bold">5000</td>
+                        </tr>
                     </template>
 
                     <template id="templateCarrito" class="templateCarrito">
-                        <th scope="row">id</th>
-                        <td>libro</td>
-                        <td class="font-weight-bold">500</td>
-                        <td>
-                            <button type="button" class="btn btn-danger btn-sm"><i
-                                    class="fas fa-trash-alt"></i></button>
-                        </td>
+                        <tr>
+                            <th scope="row">id</th>
+                            <td>libro</td>
+                            <td>cantidad</td>
+                            <td>$ <span>precio</span></td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm"><i
+                                        class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
                     </template>
 
 

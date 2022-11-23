@@ -256,6 +256,8 @@ th {
       color: black;
       margin-top: 2rem;
       margin-left: -13px; }
+      .navbar .navbar-nav .dropdown .user-conteiner .fa-cart-shopping:hover {
+        cursor: pointer; }
   .navbar .navbar-nav .dropdown .logOut {
     color: #35d116; }
   .navbar .navbar-nav .dropdown .logOut:hover {

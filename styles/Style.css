@@ -308,6 +308,14 @@ th {
   margin-left: 5%;
   width: 90%;
   text-align: center; }
+  .modalCarrito .tablaCarrito th {
+    border-bottom: 1px solid #dee2e6; }
+  .modalCarrito .tablaCarrito tfoot {
+    margin-left: 15%;
+    width: 70%; }
+    .modalCarrito .tablaCarrito tfoot th {
+      border-bottom: 0;
+      padding-bottom: 60px; }
 
 .mainContainer {
   border-radius: 15px;
@@ -401,6 +409,35 @@ main {
   main h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 30px; }
+  main .carritoButton {
+    display: flex;
+    position: sticky;
+    left: 95%;
+    bottom: 3px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(248, 248, 255, 0.664);
+    border-radius: 50%;
+    align-items: center; }
+    main .carritoButton .fa-cart-shopping {
+      cursor: pointer;
+      color: #111212;
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto; }
+  main .fa-trash-alt {
+    color: #f01810; }
+  main .loginExterno {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; }
+    main .loginExterno button {
+      border: 0px;
+      color: #11121200; }
+      main .loginExterno button .googleLogin {
+        height: 25px;
+        width: 25px;
+        color: #11121200; }
 
 .mainContainerTable {
   display: flex;

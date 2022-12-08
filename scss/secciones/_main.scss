@@ -11,23 +11,26 @@ main {
     min-height: 78.6vh;
     padding-top: 2rem;
 
-    .breadcrumb{
+    .breadcrumb {
         margin-top: 1.8rem;
-        position:relative;
+        position: relative;
         margin-left: 8px;
-        .breadcrumb-item{
-            a{
+
+        .breadcrumb-item {
+            a {
                 font-size: 15px;
                 color: #6c757d;
                 text-decoration: none;
             }
         }
-        .active{
+
+        .active {
             font-size: 15px;
             font-weight: 600;
         }
     }
-    .main{
+
+    .main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,8 +47,48 @@ main {
         padding-top: 0.5rem;
         margin-bottom: 1rem;
     }
+
     h2 {
         font-family: 'Kanit', sans-serif;
         font-size: 30px;
     }
-} 
+
+    .carritoButton {
+        display: flex;
+        position: sticky;
+        left: 95%;
+        bottom: 3px;
+        width: 70px;
+        height: 70px;
+        background-color: rgba(248, 248, 255, 0.664);
+        border-radius: 50%;
+        align-items: center;
+
+        .fa-cart-shopping {
+            cursor: pointer;
+            color: #111212;
+            font-size: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .fa-trash-alt {
+        color: rgb(240, 24, 16);
+    }
+
+    .loginExterno {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        button{
+            border: 0px;
+            color: #11121200;
+            .googleLogin {
+                height: 25px;
+                width: 25px;
+                color: #11121200;
+            }
+        }
+    }
+}

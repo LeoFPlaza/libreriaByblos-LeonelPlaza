@@ -38,6 +38,18 @@ $carouselDisplay: flex;
         margin-left: 5%;
         width: 90%;
         text-align: center;
+        th{
+            border-bottom: 1px solid #dee2e6;
+        }
+        tfoot{
+            margin-left: 15%;
+            width: 70%;
+            th{
+            border-bottom: 0;
+            padding-bottom: 60px;
+
+            }
+        }
     }
 
 }

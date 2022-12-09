@@ -78,3 +78,14 @@ function logIn() {
 productGroup.addEventListener("click", (e) => {
   addCarrito(e);
 });
+
+
+function toastVaciar(){
+  Toastify({
+      text: "Eliminaste todos los libros de tu carrito",
+      duration: 3000,
+      style: {
+          background: "linear-gradient(315deg, #b60000, #f0170f)",
+        },
+  }).showToast();
+}

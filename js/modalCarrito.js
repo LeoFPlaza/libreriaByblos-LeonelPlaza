@@ -26,6 +26,14 @@ const addCarrito = (e) => {
     //console.log(e.target);
     if (e.target.classList.contains("card-img-top")) {
         carritoPush(e.target.parentElement);
+        console.log(e.target.dataset);
+        Toastify({
+            text: "agregaste "+ e.target.alt + " a tu carrito",
+            duration: 3000,
+            style: {
+                background: "linear-gradient(315deg, #7f23f7, #40117e)",
+              },
+        }).showToast();
     }
     e.stopPropagation()
 }
@@ -68,21 +76,35 @@ const footerTablaCarrito = () => {
             carrito = {};
             buildCarrito();
             // console.log(carrito);
+            return carrito;
         })
-
-
-
     // console.log(precioTotalCarrito);
 }
 
 const btnDelete = e => {
-    // console.log(e.target)
     if (e.target.classList.contains('fa-trash-alt')){
         const elementoCarrito = carrito[e.target.dataset.id];
         elementoCarrito.cantidad--
+         console.log(elementoCarrito)
 
         if(elementoCarrito.cantidad === 0){
             delete carrito[e.target.dataset.id];
+            Toastify({
+                text: "Quitaste "+ elementoCarrito.titulo,
+                duration: 3000,
+                style: {
+                    background: "linear-gradient(315deg, #b60000, #f0170f)",
+                  },
+            }).showToast();
+    
+        }else{
+            Toastify({
+                text: "Eliminaste una copia de " + elementoCarrito.titulo,
+                duration: 3000,
+                style: {
+                    background: "linear-gradient(315deg, #b60000, #f0170f)",
+                  },
+            }).showToast();
         };
         buildCarrito();
     }

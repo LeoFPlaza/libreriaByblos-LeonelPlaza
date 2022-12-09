@@ -1,3 +1,8 @@
+// hello.init(
+//   {
+//     "google": "awesome-byblos-v01"
+//   }
+// );
 const productGroup = document.querySelector("#productGroup");
 const cardTemplate = document.querySelector("#cardTemplate").content;
 const fragment = document.createDocumentFragment();
@@ -51,26 +56,24 @@ function logIn() {
 
 }
 
-hello.on('auth.login', function(auth) {
+// hello.on('auth.login', function(auth) {
 
-	// Call user information, for the given network
-	hello(auth.network).api('me').then(function(r) {
-		// Inject it into the container
-		var label = document.getElementById('profile_' + auth.network);
-		if (!label) {
-			label = document.createElement('div');
-			label.id = 'profile_' + auth.network;
-			document.getElementById('profile').appendChild(label);
-		}
-		label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
-	});
-});
+// 	// Call user information, for the given network
+// 	hello(auth.network).api('me').then(function(r) {
+// 		// Inject it into the container
+// 		var label = document.getElementById('profile_' + auth.network);
+// 		if (!label) {
+// 			label = document.createElement('div');
+// 			label.id = 'profile_' + auth.network;
+// 			document.getElementById('profile').appendChild(label);
+// 		}
+// 		label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
+// 	});
+// });
 
-hello.init({
-	facebook: FACEBOOK_CLIENT_ID,
-	windows: WINDOWS_CLIENT_ID,
-	google: GOOGLE_CLIENT_ID
-}, {redirect_uri: 'redirect.html'});
+// hello.init({
+// 	google: GOOGLE_CLIENT_ID
+// }, {redirect_uri: 'redirect.html'});
 
 productGroup.addEventListener("click", (e) => {
   addCarrito(e);
